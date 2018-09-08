@@ -2,15 +2,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/red"
+
     >
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="160dp"
-        android:src="@drawable/app_banner"
-        android:scaleType="fitXY"
-        android:layout_marginTop="-2dp"
-        android:gravity="top"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#28c6a6"
+        android:weightSum="640"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:src="@drawable/app_banner"
+            android:scaleType="fitXY"
+            android:layout_marginTop="-2dp"
+            android:gravity="top"
+            />
+    </LinearLayout>
     <include layout="@layout/navigation_bar_home" />
+
 
 </RelativeLayout>

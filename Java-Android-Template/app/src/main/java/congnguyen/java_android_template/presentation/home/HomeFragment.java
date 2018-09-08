@@ -19,7 +19,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 import congnguyen.java_android_template.R;
+import congnguyen.java_android_template.activity.MainActivity;
 import congnguyen.java_android_template.common.Constants;
 import congnguyen.java_android_template.fragment.BaseFragment;
 
@@ -54,5 +56,9 @@ public class HomeFragment extends BaseFragment {
 
     }
 
+    @OnClick(R.id.btnmenu) public void send(View view) {
 
+        ((MainActivity)getActivity()).openDrawer();
+
+    }
 }

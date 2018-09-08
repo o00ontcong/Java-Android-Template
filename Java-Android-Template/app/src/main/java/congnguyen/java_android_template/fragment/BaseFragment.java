@@ -30,6 +30,7 @@ import congnguyen.java_android_template.view.CoolToast;
 public abstract class BaseFragment extends Fragment implements BaseView {
     private Unbinder mUnbinder;
     protected BaseActivity mParentActivity;
+    @BindView(R.id.btnmenu) protected ImageView btnMenu;
 
     protected abstract int getLayoutResourceId();
 
