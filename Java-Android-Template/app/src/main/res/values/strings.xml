@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Java-Android-Template</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_default">Java-Android-Template</string>
+    <string name="action_close">Đóng</string>
+    <string name="action_save">Lưu</string>
+
+    <string name="action_no">Không</string>
+    <string name="action_yes">Có</string>
+</resources>

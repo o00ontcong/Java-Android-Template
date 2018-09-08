@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnTopBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_alignParentTop="true"
+
+    >
+
+    <ImageView
+        android:id="@+id/btnmenu"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="11dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/menu"/>
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/btnmenu"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@id/btnmenu"
+        android:layout_width="91dp"
+        android:layout_height="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:src="@drawable/dcm_logo_white"/>
+
+    <RelativeLayout
+        android:id="@+id/btnProfile"
+        android:layout_width="140dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        >
+        <TextView
+            android:id="@+id/textviewHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/textviewName"
+            android:layout_marginRight="4dp"
+            android:layout_toStartOf="@id/textviewName"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Xin chào!"
+            android:textSize="10sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textviewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/imgAvatarSmall"
+            android:layout_marginRight="4dp"
+            android:layout_toStartOf="@id/imgAvatarSmall"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:lines="1"
+            android:text="C2 Cô Hồng"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/imgAvatarSmall"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/avatar_small"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

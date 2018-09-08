@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Toast-->
+    <dimen name="toast_width">200dp</dimen>
+    <dimen name="ic_size">25dp</dimen>
+    <dimen name="class_contact_text_title_width">96dp</dimen>
+</resources>
